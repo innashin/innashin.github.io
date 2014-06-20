@@ -36,6 +36,12 @@ $(document).ready(function() {
 		else{
 			$('#main-nav').addClass('scrolled');    
 		}
+		if ($(window).scrollTop()< 1000){
+			$('#inna-background').removeClass('scrolled');
+		}
+		else{
+			$('#inna-background').addClass('scrolled');    
+		}
 	});
 	
 	$('#main-nav').css({'top':-100,'opacity':0});
