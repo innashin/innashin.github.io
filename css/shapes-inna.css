@@ -7,6 +7,7 @@ body{
 	color:#5d5e5f;
 	font-weight:100;
 	overflow-x:hidden;
+    height: 2000px !important;
 }
 
 h1,
@@ -70,7 +71,9 @@ a:focus,
 }
 
 .primary {
-	color:#5AA9CE;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica; 
+    font-size: 16px;
+    margin-bottom: 7px;
 }
 
 /* Inna Background */
@@ -83,7 +86,7 @@ a:focus,
     z-index: 2;
     width: 100%;
     background: 
-         url("../assets/inna/home.png") center 0px no-repeat,
+         url("../assets/inna/home.png") center 50px no-repeat,
          url("../assets/inna/back.png") 0px 0px repeat-y;
     height: 500px;
 }
@@ -100,6 +103,24 @@ a:focus,
          url("../assets/inna/pattern1.png") center 0px no-repeat;
     height: 100%;
 }
+
+
+/* KIPODI */
+#kipodi  {
+    position: absolute;
+    z-index: 9;
+    width: 143px;
+    height: 124px;
+    background:url('../assets/inna/kipodi.png') no-repeat;
+    top: 270px;
+    left: 930px;
+}
+svg {
+    left: -10000px;
+    position: absolute;
+    top: -10000px;
+}
+
 
 /*----------------------
 ---Main Layout Styles---
@@ -183,6 +204,11 @@ a:focus,
     z-index: 1;
 }
 
+.about-pattern {
+    background:transparent;
+    height: 100px;
+    width: 100%;
+}
 .bg-transparent {
     background:transparent;
     padding:60px 0 268px;
@@ -230,6 +256,18 @@ a:focus,
 .section-header-background {
     height:67px;
     background: url("../assets/inna/section.png");
+    position: relative;
+    bottom: 10px;
+}
+.section-header-background2 {
+    height:67px;
+    background: url("../assets/inna/section2.png");
+    position: relative;
+    bottom: 10px;
+}
+.section-header-background3 {
+    height:67px;
+    background: url("../assets/inna/section3.png");
     position: relative;
     bottom: 10px;
 }
@@ -294,16 +332,20 @@ a:focus,
 ----- Buttons ------
 --------------------*/
 .btn-theme{
-	color:#fff;
-	background-color:#5AA9CE;
-	padding:15px 40px;
-	font-size:28px;
-	font-weight:300;
+    background:url('../assets/inna/button.png') no-repeat;
+	font-size:16px;
 	text-transform:uppercase;
 	border:none;
 	border-radius:2px;
 	-webkit-transition:opacity 0.2s ease-out;
 	transition:opacity 0.2s ease-out;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica; 
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(255,255,255, 0.33);
+    height: 28px;
+    width: 66px;
+    position: relative;
+    left: 265px;
 }
 
 .btn-theme:hover,
@@ -615,6 +657,19 @@ a.btn-theme:focus{
 /*-----------------------
 ------About Styles-------
 ------------------------*/
+.inna-about-pic {
+    margin-left: 140px;
+}
+.inna-about-hello {
+    margin-top: 40px;
+}
+.inna-about-text {
+    margin-top: 10px;
+}
+.inna-about {
+    position:relative;
+    right: 80px;
+}
 #about .lead-member .member-title{
     position:relative;
     top:-20px;
@@ -744,6 +799,11 @@ a.btn-theme:focus{
 /*----------------------
 -----Portfolio Styles---
 ------------------------*/
+#portfolio {
+    background: url("../assets/inna/portfolioback.png");
+    z-index: 3;
+    position: relative;
+}
 #filter-works {
     margin-top: 10px;
 }
@@ -1169,7 +1229,7 @@ a.btn-theme:focus{
 -----Testimonials ------
 ------------------------*/
 #testimonials {
-    padding-bottom:80px;
+    padding:0;
 }
 
 #testimonials .quote-icon {
@@ -1422,6 +1482,10 @@ a.btn-theme:focus{
     color:#5AA9CE;
 }
 
+#contact-form {
+    margin-top: 30px;
+}
+
 #contact-form .form-group label{
     display:none;
     font-size:18px;
@@ -1436,28 +1500,28 @@ a.btn-theme:focus{
 
 #contact-form .controls {
     padding:0;
-    margin-bottom:30px;
     border:1px solid #eee;
 }
 
 #contact-form .form-control {
-    background:#fdfdfd;
-    border:none;
-    border-bottom:3px solid transparent;
+    border-style: solid;
+    background:#ffffff;
     border-radius:0;
     outline:none;
     box-shadow:none;
-    height:62px;
-    font-size:21px;
+    height:49px;
+    font-size:16px;
     line-height:32px;
     font-weight:100;
-    padding-left:64px;
+    padding-left:10px;
     -webkit-transition:border-color .3s ease-out;
     transition:border-color .3s ease-out;
+    width: 329px;
 }
 
 #contact-form .form-group{
     position:relative;
+    margin-bottom: 7px;
 }
 
 #contact-form .form-group [class*=fa] {
@@ -1479,10 +1543,7 @@ a.btn-theme:focus{
 }
 
 #contact-form textarea.form-control {
-    height:auto;
-	max-width:100%;
-	min-width:100%;
-    font-size:21px;
+    height:195px;
     line-height:32px;
 	padding-top:14px;
 }
@@ -1688,6 +1749,10 @@ a.btn-theme:focus{
     text-transform:none;
 }
 
+.footer-nav {
+    position: relative;
+    z-index: 3;
+}
 
 #main-footer ul.footer-nav {
     list-style:none;
@@ -1985,6 +2050,7 @@ a.btn-theme:focus{
     display:none;
 }
 
+
 #main-nav .nav a:hover,
 #main-nav .nav li.active a {
     box-shadow:0 0 0 1px;
@@ -1999,6 +2065,7 @@ a.btn-theme:focus{
     font-size:42px;
     line-height:52px;
 }
+
 
 #about .member .main-img {
     margin:0 auto;

@@ -6,7 +6,19 @@ $(document).ready(function() {
 	$(window).load(function(){
 		$('#page-loader').fadeOut(500);
 	})	
-	
+
+
+    // Skrollr path
+	var pathEasing = skrollr.easingFromPath(document.getElementById('path1'));
+
+	skrollr.init({
+		easing: {
+			pathx: pathEasing.x,
+			pathy: pathEasing.y,
+			angle: pathEasing.angle
+		}
+	});
+   
 	/*============================================
 	Background Slider
 	==============================================*/
