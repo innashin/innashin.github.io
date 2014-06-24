@@ -278,7 +278,7 @@ $(document).ready(function() {
 			
 			$('#preview-media img').load(function(){
 				$('#preview-media.flexslider').flexslider({
-					slideshowSpeed: 3000,
+                    slideshow: false,
 					animation: 'slide',
 					pauseOnAction: false, 
 					pauseOnHover: true, 
