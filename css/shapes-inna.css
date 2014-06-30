@@ -1123,6 +1123,10 @@ a.btn-theme:focus{
     transform:scale(1);*/
 }
 
+#project-preview .container {
+    padding: 30px;
+}
+
 .no-overlay #project-preview-wrapper {
     background:rgba(0,0,0,0.4);
 }
@@ -1158,6 +1162,8 @@ a.btn-theme:focus{
     margin-bottom: 10px;
     margin-top: 20px;
     position:relative;
+    border-bottom: medium dotted;
+    padding-bottom: 10px;
 }
 
 .close-preview {
