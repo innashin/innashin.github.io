@@ -112,8 +112,14 @@ a:focus,
     width: 143px;
     height: 124px;
     background:url('../assets/inna/kipodi.png') no-repeat;
-    top: 270px;
-    left: 930px;
+}
+
+#kipodi2  {
+    position: absolute;
+    z-index: 9;
+    width: 143px;
+    height: 124px;
+    background:url('../assets/inna/kipodi.png') no-repeat;
 }
 svg {
     left: -10000px;
