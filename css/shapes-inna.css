@@ -127,6 +127,7 @@ svg {
 ------------------------*/
 #page-loader {
     position:fixed;
+    top: 0;
     width:100%;
     height:100%;
     background:#fff;
@@ -161,7 +162,7 @@ svg {
     margin-left:-64px;
     width:128px;
     height:128px;
-    background:url('../assets/page-loader-blue.gif') no-repeat;
+    background:url('../assets/inna/loader.gif') no-repeat;
     z-index:1;
 }
 
@@ -1124,7 +1125,7 @@ a.btn-theme:focus{
 }
 
 #project-preview .container {
-    padding: 30px;
+    padding: 27px;
 }
 
 .no-overlay #project-preview-wrapper {
