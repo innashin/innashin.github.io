@@ -363,15 +363,12 @@ svg {
 .btn-theme:hover,
 a.btn-theme:hover{
 	cursor:pointer;
-	color:#fff;
-	opacity:0.8;
 }
 
 .btn-theme:active,
 .btn-theme:focus,
 a.btn-theme:active,
 a.btn-theme:focus{
-	color:#fff;
 }
 
 .btn-theme [class*=fa]{
