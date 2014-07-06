@@ -680,6 +680,10 @@ a.btn-theme:focus{
 }
 .inna-about {
     position:relative;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica; 
+    font-size: 15px;
+    position: relative;
+    line-height: 19px;
     right: 80px;
 }
 #about .lead-member .member-title{
@@ -936,6 +940,12 @@ a.btn-theme:focus{
 	opacity:0;
 	filter:alpha(opacity=0);
 }
+
+
+.project-item.hidden {
+    display: none;
+}
+
 
 .project-item img {
     z-index:1;

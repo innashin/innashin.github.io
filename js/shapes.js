@@ -141,7 +141,7 @@ $(document).ready(function() {
 		$('#projects-container').css({visibility:'visible'});
 
 		$('#projects-container').masonry({
-			itemSelector: '.project-item:not(.filtered)',
+			itemSelector: '.project-item:not(.filtered):not(.hidden)',
 			columnWidth:350,
 			isFitWidth: true,
 			isResizable: true,
@@ -189,6 +189,7 @@ $(document).ready(function() {
 			
 			if(match){
 				$(this).removeClass('filtered');
+				$(this).removeClass('hidden');
 			}
 			else{
 				$(this).addClass('filtered');
