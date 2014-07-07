@@ -189,7 +189,6 @@ $(document).ready(function() {
 			
 			if(match){
 				$(this).removeClass('filtered');
-				$(this).removeClass('hidden');
 			}
 			else{
 				$(this).addClass('filtered');
