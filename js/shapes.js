@@ -282,12 +282,16 @@ $(document).ready(function() {
 					animation: 'slide',
 					pauseOnAction: false, 
 					pauseOnHover: true, 
-					start: function(){
+					start: function(slider){
 						setTimeout(function(){
 							openPreview();
 							$('#preview-loader').removeClass('show');
 							$(window).trigger('resize');
-						},1000)
+						},1000);
+                        $('.slides li img').click(function(event){
+                            event.preventDefault();
+                            slider.flexAnimate(slider.getTarget("next"));
+                        });
 					}
 				});
 			});

@@ -363,15 +363,12 @@ svg {
 .btn-theme:hover,
 a.btn-theme:hover{
 	cursor:pointer;
-	color:#fff;
-	opacity:0.8;
 }
 
 .btn-theme:active,
 .btn-theme:focus,
 a.btn-theme:active,
 a.btn-theme:focus{
-	color:#fff;
 }
 
 .btn-theme [class*=fa]{
@@ -680,6 +677,10 @@ a.btn-theme:focus{
 }
 .inna-about {
     position:relative;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica; 
+    font-size: 15px;
+    position: relative;
+    line-height: 19px;
     right: 80px;
 }
 #about .lead-member .member-title{
@@ -932,10 +933,17 @@ a.btn-theme:focus{
 .project-item.filtered{
 	-moz-transform: scale(0);
 	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
     transform:scale(0);
 	opacity:0;
 	filter:alpha(opacity=0);
 }
+
+
+.project-item.hidden {
+    display: none;
+}
+
 
 .project-item img {
     z-index:1;
